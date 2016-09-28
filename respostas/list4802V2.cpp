@@ -23,7 +23,7 @@ public:
 	T denominator() const {return denominator_;}
 
 private:
-	int mdc();
+	T mdc();
 	void reduce();
 	T numerator_;
 	T denominator_;
@@ -45,7 +45,7 @@ void rational<T>::reduce(){
 }
 
 template<class T>
-int rational<T>::mdc(int a, int b){
+T rational<T>::mdc(T a, T b){
 	if(b == 0)  
   		return a;  
  	else  
