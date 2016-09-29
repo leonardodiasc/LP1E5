@@ -23,13 +23,19 @@ public:
 	T denominator() const {return denominator_;}
 
 private:
-	T mdc();
+	T mdc(T, T);
 	void reduce();
 	T numerator_;
 	T denominator_;
 	
 };
 
+template<class T>
+rational<T>::rational(T num, T den)
+: numerator_{num}, denominator_{den}
+{
+  rational<T>::reduce();
+}
 template<class T>
 void rational<T>::assign(T num, T den)
 {
