@@ -46,16 +46,22 @@ void rational<T>::assign(T num, T den)
 
 template<class T>
 void rational<T>::reduce(){
-	numerator_ = numerator_/(mdc(numerator_,denominator_));
-	denominator_ = denominator_/(mdc(numerator_,denominator_));
+	int novo = mdc(this->numerator_,this->denominator_);
+	this->numerator_ = this->numerator_/novo;
+	this->denominator_ = this->denominator_/novo;
 }
 
 template<class T>
-T rational<T>::mdc(T a, T b){
-	if(b == 0)  
-  		return a;  
- 	else  
-  		return mdc(b,a%b);
+T rational<T>::mdc(T num1, T num2){
+    T resto;
+    do {
+        resto = num1 % num2;
+
+        num1 = num2;
+        num2 = resto;
+
+    } while (resto != 0);
+    return num1;
 }
 
 template<class T>
