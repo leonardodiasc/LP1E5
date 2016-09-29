@@ -21,6 +21,32 @@ public:
 	}
 	T numerator() const { return numerator_;}
 	T denominator() const {return denominator_;}
+	bool greaterThan(num1, num2){
+		if (num1 > num2)
+			return true;
+		else
+			return false;
+	}
+	bool greaterThanOrEqualto(num1, num2){
+		if (num1 >= num2)
+			return true;
+		else
+			return false;
+	}
+	bool lessThan(num1, num2){
+		if (num1 < num2)
+			return true;
+		else
+			return false;
+	}
+	bool lessThanOrEqualto(num1, num2){
+		if (num1 <= num2)
+			return true;
+		else
+			return false;
+	}
+			
+		
 
 private:
 	T mdc(T, T);
