@@ -1,4 +1,18 @@
 1-
 2-
 3-
+
+a)
+
+b) O static_cast nos permite converter tipos de dados numéricos quando sabemos que tipos de dados serão usados no processo. Veja abaixo um exemplo do uso do método convert():
+
+rational <int> x(10, 5)
+x.assign(2.2,3.3);
+float resultado = x.convert();
+// A variável "resultado" irá valer 0,66....
+
+c)
+
+d) Quando a palavra reservada "inline" é inserida no código, a compilação ocorrerá de forma diferente. Vai haver uma otimização do processo de compilação, por meio da substituição de uma chamada na função por um corpo da função chamada. Nela, não há mudança no código fonte.  
+
 4-
