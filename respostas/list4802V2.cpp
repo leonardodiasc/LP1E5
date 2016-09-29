@@ -22,28 +22,16 @@ public:
 	T numerator() const { return numerator_;}
 	T denominator() const {return denominator_;}
 	bool greaterThan(int num1,int num2){
-		if ( num1 > num2)
-			return true;
-		else
-			return false;
+		return (num1 > num2);
 	}
 	bool greaterThanOrEqualto(int num1,int num2){
-		if ( num1 >= num2)
-			return true;
-		else
-			return false;
+		return (num1 >= num2);
 	}
 	bool lessThan(int num1,int num2){
-		if ( num1 <  num2)
-			return true;
-		else
-			return false;
+		return (num1 < num2);
 	}
 	bool lessThanOrEqualto(int num1,int num2){
-		if (num1 <= num2)
-			return true;
-		else
-			return false;
+		return (num1 <= num2);
 	}
 			
 		
