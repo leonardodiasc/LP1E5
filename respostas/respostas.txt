@@ -15,4 +15,6 @@ c) O código desta letra se encontra no arquivo list4802V2.cpp
 
 d) Quando a palavra reservada "inline" é inserida no código, a compilação ocorrerá de forma diferente. Vai haver uma otimização do processo de compilação, por meio da substituição de uma chamada na função por um corpo da função chamada. Nela, não há mudança no código fonte.  
 
+e) 
+
 4-
