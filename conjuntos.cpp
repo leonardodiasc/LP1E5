@@ -126,9 +126,9 @@ conjunto<T> conjunto<T>::difference(conjunto<T> const& b)
 
 	for(int i = 0; i < ncurrent_; i++)
 	{
-		if( not( belongsTo( b.get_element(i) ) ))
+		if(not(b.belongsTo(get_element(i))))
 		{
-			c.insert(b.get_element(i));
+			c.insert(get_element(i));
 		}
 	}
 
